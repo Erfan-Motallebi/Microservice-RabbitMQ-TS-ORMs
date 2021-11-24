@@ -1,0 +1,19 @@
+{
+  "type": "mongodb",
+  "host": "localhost",
+  "port": 27017,
+  "database": "products",
+  "useUnifiedTopology": true,
+  "logging": true,
+  "entities": [
+    "src/entity/**/*.ts"
+  ],
+  "migrationTableName": "product_migration_table",
+  "migrations": [
+    "src/migrations/*.ts"
+  ],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migrations"
+  }
+}
